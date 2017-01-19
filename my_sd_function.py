@@ -1,9 +1,9 @@
-# Standard Deviation Formulas:
-# https://www.mathsisfun.com/data/standard-deviation-formulas.html
-# Step 1: Mean of all values (mu).
-# Step 2: For each number, subtract the mean and square the result.
-# Step 3: Add up all the values, then divide by how many.
-# Step 4: Square root.
+'''Standard Deviation Formula:
+Reference: https://www.mathsisfun.com/data/standard-deviation-formulas.html
+Step 1: Mean of all values (mu).
+Step 2: For each number, subtract the mean and square the result.
+Step 3: Add up all the values, then divide by how many.
+Step 4: Square root.'''
 
 import math, random
 
@@ -11,7 +11,7 @@ class MyMath:
     def __init__(self, values):
         self.values = values  
 
-    def sd_func(self):  # Standard Deviation
+    def sd_func(self):
         sum_values = 0  # Step 1
         for i in self.values:
             sum_values += i
